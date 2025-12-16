@@ -1,0 +1,6 @@
+<p class="font-bold text-[32px] text-[var(--text-color)] mt-14">Popular Restaurants</p>
+<div class="flex gap-5 mt-[51px] overflow-x-auto mb-11">
+  @for (item of items; track $index) {
+    <app-pop-res-card [item]="item" ></app-pop-res-card>
+  }
+</div>
