@@ -1,1 +1,18 @@
-<p>navbar works!</p>
+<div class="navbar flex row align-items-center justify-between">
+  <div class="logo self-center">
+    <a routerLink="/" ><img src="assets/images/logo.png" alt=""></a>
+  </div>
+  <div class="features">
+    <ul class="flex row justify-baseline align-items-center">
+      <li class="feature"><a routerLink="/home">Home</a></li>
+      <li class="feature"><a routerLink="/menu">Browse Menu</a></li>
+      <li class="feature"><a routerLink="/offers">Special Offers</a></li>
+      <li class="feature"><a routerLink="/restaurants">Restaurants</a></li>
+      <li class="feature"><a routerLink="/order">Track Order</a></li>
+    </ul>
+  </div>
+  <div class="login self-center border-0 rounded-4xl flex justify-between gap-1 ">
+    <img src="assets/images/avatar-icon.png" class="w-6 aspect-auto" alt="">
+    <a routerLink="/login">Login</a> / <a routerLink="/signup">Sign Up</a>
+  </div>
+</div>

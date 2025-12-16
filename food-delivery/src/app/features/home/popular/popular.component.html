@@ -1,0 +1,6 @@
+<p class="font-bold text-[32px] text-[var(--text-color)] ">Order.uk Popular Categories 🤩</p>
+<div class="flex gap-5 mt-[51px] overflow-x-auto">
+  @for (item of items; track $index) {
+    <app-popular-card [item]="item" ></app-popular-card>
+  }
+</div>

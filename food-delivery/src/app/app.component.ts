@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { SelectModule } from 'primeng/select';
+import { RouterOutlet,RouterLink, RouterLinkActive } from '@angular/router';
+import { StatusBarComponent } from "./layout/status-bar/status-bar.component";
+import { FooterComponent } from "./layout/footer/footer.component";
+import { NavbarComponent } from "./layout/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, StatusBarComponent,
+     FooterComponent, NavbarComponent,
+     RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
